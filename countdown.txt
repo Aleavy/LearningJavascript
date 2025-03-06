@@ -1,0 +1,15 @@
+Incognitas: userInput
+
+Datos: 
+- UserInput
+- Timer
+- Boton de pausa
+- Boton de reanudar
+
+
+Requisitos: 
+- Boton de pausa debe de detener el timer
+- Boton de reanudar debe reanudar el timer (debe estar pausado para funcionar)
+- Se debe poder elegir indivualmente las horas, minutos y segundos del timer.
+- Dos botones con simbolos de flechas para incrementar y decrementar el timer.
+- Tirar una alerta cuando el timer termine.
