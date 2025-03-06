@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CountDown</title>
+    
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .wrapper{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="timer">
+            <div class="hours">
+                <button class="up-arrow"></button>
+                <span class="time-int"></span>
+                <button class="down-arrow"></button>
+            </div>
+            <div class="minutes">
+                <button class="up-arrow"></button>
+                <span class="time-int"></span>
+                <button class="down-arrow"></button>
+            </div>
+            <div class="seconds">
+                <button class="up-arrow"></button>
+                <span class="time-int"></span>
+                <button class="down-arrow"></button>
+            </div>
+        </div>
+        <div class="btns">
+            <button id="start">Start</button>
+            <button id="stop">Stop</button>
+            <button id="resume">Resume</button>
+            <button id="restart">Restart</button>
+        </div>
+    </div>    
+</body>
+
+<script src="countdown.js"></script>
+
+</html>
