@@ -19,32 +19,68 @@
             align-items: center;
             flex-direction: column;
         }
+
+        .column{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+            & img{
+                max-height: 40px;
+            }
+        }
+        .timer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 10px;
+        }
+        .letters{
+            display: flex;
+            margin-left: 5px;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+        .btns > button{
+            width: 100px;
+            height: 30px;
+            @media screen and (width <= 400px) {
+                width: 70px;
+            }
+        }
     </style>
 
 </head>
 <body>
     <div class="wrapper">
+        <div class="letters">
+            <p>Hours</p>
+            <p>Minutes</p>
+            <p>Seconds</p>
+        </div>
         <div class="timer">
-            <div class="hours">
-                <button class="up-arrow"></button>
+            <div class="column hours">
+                <button class="up-arrow"><img src="img\up-arrow-svgrepo-com.svg" alt=""></button>
                 <span class="time-int"></span>
-                <button class="down-arrow"></button>
+                <button class="down-arrow"><img src="img\down-arrow-5-svgrepo-com.svg" alt=""></button>
             </div>
-            <div class="minutes">
-                <button class="up-arrow"></button>
+            <div class="column minutes">
+                <button class="up-arrow"><img src="img\up-arrow-svgrepo-com.svg" alt=""></button>
                 <span class="time-int"></span>
-                <button class="down-arrow"></button>
+                <button class="down-arrow"><img src="img\down-arrow-5-svgrepo-com.svg" alt=""></button>
             </div>
-            <div class="seconds">
-                <button class="up-arrow"></button>
+            <div class="column seconds">
+                <button class="up-arrow"><img src="img\up-arrow-svgrepo-com.svg" alt=""></button>
                 <span class="time-int"></span>
-                <button class="down-arrow"></button>
+                <button class="down-arrow"><img src="img\down-arrow-5-svgrepo-com.svg" alt=""></button>
             </div>
         </div>
         <div class="btns">
             <button id="start">Start</button>
             <button id="stop">Stop</button>
-            <button id="resume">Resume</button>
             <button id="restart">Restart</button>
         </div>
     </div>    
